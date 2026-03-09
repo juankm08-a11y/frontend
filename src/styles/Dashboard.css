@@ -1,0 +1,32 @@
+.dashboard {
+  padding: 24px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.title-dashboard {
+  font-size: 20px;
+  color: #1f2937;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lista-ordenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.total-ordenes,
+.ordenes-pendientes,
+.ordenes-ejecutadas,
+.ordenes-criticas {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
