@@ -10,6 +10,7 @@ import OrdenDetalle from "../pages/OrdenDetalle";
 import RegistrarActividad from "../pages/RegistrarActividad";
 import HistorialPage from "../pages/HistorialPage";
 import AprobacionPage from "../pages/AprobacionPage";
+import HojaVidaEquipo from "../pages/HojaVidaquipo";
 
 export default function AppRouter() {
   return (
@@ -26,6 +27,7 @@ export default function AppRouter() {
         <Route path="/ordenes/:id/actividad" element={<RegistrarActividad />} />
         <Route path="/historial" element={<HistorialPage />} />
         <Route path="/aprobacion " element={<AprobacionPage />} />
+        <Route path="/equipo-demo" element={<HojaVidaEquipo />} />
       </Routes>
     </BrowserRouter>
   );
