@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+:root {
+  --color-primario: #1e88e5;
+  --color-secundario: #1565c0;
+  --color-fondo: #f4f6f9;
+  --color-sidebar: #0f172a;
+  --color-texto: #333;
+  --color-blanco: #fff;
+}
+
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: var(--color-sidebar);
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.main {
+  margin-left: 240px;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fil, minmax(200px, 1fr));
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background: var(--color-primario);
+  color: white;
+  padding: 12px;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.btn {
+  background: var(--color-primario);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-secundario);
+}
