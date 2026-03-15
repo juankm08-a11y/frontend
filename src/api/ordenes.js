@@ -1,9 +1,4 @@
-import axios from "axios";
-
-const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
-  withCredentials: true,
-});
+import API from "./apiClient";
 
 export const createOrden = (data) => API.post("ordenes/", data);
 export const getOrdenes = (estado = "") =>
